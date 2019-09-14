@@ -1,7 +1,7 @@
 class Computer
   attr_reader :mark
 
-  #Set the players mark.
+  #Set the computers  mark.
   def initialize(mark)
     @mark = mark
   end
@@ -10,17 +10,14 @@ class Computer
     min_max(game)[1]
   end
 
-  def choose_spot(board)
-    min_max(board)
-  end
-
   def play board, position
     board[position] = @mark
   end
 
   private
 
-  #Below the minimax algorithm is used, it recursively flips back and forth between players until a final score is determined allowing the computer to play the next b  est move.
+  #Below is the implementation of the minimax algorithm, it recursively flips back and forth between players until a final score is determined to allow the computer to play the next best move.
+
   def min_max(game)
     return [score(game), nil] if game.game_over?
     #use an array to collect socres and the move of a given game to determin the next best move.
@@ -50,7 +47,5 @@ class Computer
       -1
     end
   end
-
-
 end
 

@@ -28,14 +28,14 @@ class Board
     @state[spot - 1] == 'X' || @state[spot - 1] == 'O'
   end
 
-  #Set state position or raise index error if input handler module fails at it's job.
+  #get state  position or raise index error if input handler module fails at it's job.
   def [](position)
     raise IndexError, "Bad position: #{position}" unless position.between?(1,9)
     @state[position - 1]
   end
 
   #Set state mark or raise argument error if input handler doesn't catch that a spot was already taken.
-  def []= position, mark
+  def []=(position, mark)
     raise ArgumentError, "Position already taken #{position}" unless valid_position? position
     @state[position - 1] = mark
   end
