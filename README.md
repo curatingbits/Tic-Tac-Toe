@@ -1,7 +1,5 @@
-**TicTacToe 
+# Tic-Tac-Toe
 
-A simple command line Tic-Tac-Toe game against.
+A simple command-line tic-tac-toe game. When the programs invoked, allow the player to choose either to be X or O and then run through a game letting the user play against the computer. When it is the user's turn, you must display the current state of the board and give the user a choice of which square to play next. The game must stop when one player wins or when the board is full. 
 
-To start a new game run 'ruby bin/ttt.rb'
-
-
+To run the program, `ruby bin/tictactoe.rb`
