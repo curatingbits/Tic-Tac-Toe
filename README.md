@@ -5,7 +5,7 @@ A simple command-line tic-tac-toe game. When the programs invoked, allow the pla
 To run the program follow the directions below:
 
 *`git clone https://github.com/curatingbits/Tic-Tac-Toe.git`
-* `cd Tic-Tac-Toe`
+*`cd Tic-Tac-Toe`
 *`ruby bin/ttt.rb`
 
 Good luck! 
