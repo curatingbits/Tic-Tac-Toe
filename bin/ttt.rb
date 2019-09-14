@@ -5,7 +5,7 @@ require_relative '../lib/Players/human_player.rb'
 
 include InputHandler
 
-puts "What would you like to be X or O?"
+puts "What would you like to be, X or O?"
 
 marker_type = choose_marker
 

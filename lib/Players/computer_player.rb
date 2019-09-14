@@ -37,7 +37,7 @@ class Computer
     end
   end
 
-  #return the score for the current player mark
+  #return +1 if the "O" wins the game, -1 if "X"  wins and 0 for a draw.  X or O is irrelevant, only current players turn it happens to be.
   def score(game)
     if game.winner.nil?
       0
