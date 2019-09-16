@@ -1,10 +1,11 @@
 require 'spec_helper'
 
-describe Game do
-  let(:game) {describe_class.new}
+describe Tictactoe do
+  players = [Human.new('X'),Computer.new('O')]
+  let(:tictactoe) {described_class.new( players)}
 
   describe "#create new game" do
-    it "is able to start game" do
+    it "has board and players" do
 
     end
   end

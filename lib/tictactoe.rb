@@ -41,6 +41,6 @@ class Tictactoe < Game
   #new_game is used by minimax to create instances of new boards and instances of games to recursively simulate future moves to determine the next best move for the computer.
   def new_game(position)
     board = @board.new_board(position, current_player.mark)
-    self.class.new  @players.rotate, board
+    self.class.new(@players.rotate, board)
   end
 end

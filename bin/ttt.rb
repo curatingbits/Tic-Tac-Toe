@@ -26,5 +26,5 @@ winner = game.winner
 if winner.nil?
   puts "\nNo winner"
 else
-  puts "winner is #{winner.mark}"
+  puts "\nwinner is #{winner.mark}"
 end
